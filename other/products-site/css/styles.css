@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+main {
+    padding: 25px;
+    margin-bottom: 16px;
+}
+
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav input[type="text"] {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.product-container {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.product-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-thumbnails img {
+    width: 60px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-details {
+    margin-left: 30px;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #838383;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.new-price {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 13px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background-color: #005ebd;
+}
+
+.more-inf {
+    margin-left: 10px;
+}
+
+.warranty-options li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 33px 0;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.social-icons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;  
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: red;  
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);  
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: invert(100%);  
+}
+
+/* Додаємо медіа-запит для мобільних пристроїв */
+@media (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .product-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .product-details h1 {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .buy-btn {
+        width: 80%;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .warranty-options {
+        padding: 0 20px;
+        text-align: left;
+    }
+}
