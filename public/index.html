@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLANT-Shop</title>
+    <link rel="stylesheet" href="order-css/order-style.css">
+    <link rel="icon" href="./material/logo/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Atlant | ORDER 
+        </div>        
+    </header>
+
+    <main>
+        <form id="orderForm">
+            <h2>Оформлення замовлення</h2>
+
+            <!-- Поле для вводу номера телефону -->
+            <div class="number-text">
+                <h3>Ім'я фамілія</h3>
+            </div>
+            <div class="number-input">
+                <input class="number-input__input" type="name" id="name" placeholder="Ім'я Фамілія">
+            </div>
+
+            <!-- Поле для промокоду -->
+            <div class="promo-text">
+                <h3>Номер телефону</h3>
+            </div>
+            <div class="promo-input">
+                <input class="promo-input__input" type="text" id="phone" value="+380" maxlength="16">
+            </div>
+
+            <!-- Кнопка підтвердження -->
+            <div class="button-container">
+                <button id="submit" type="submit" class="order-button">Підтвердити замовлення</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

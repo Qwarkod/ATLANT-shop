@@ -1,0 +1,14 @@
+{
+    "name": "my-telegram-order-bot",
+    "version": "1.0.0",
+    "description": "Простий сайт для замовлення товарів з повідомленнями через Telegram",
+    "main": "server/app.js",
+    "scripts": {
+      "start": "node server/app.js"
+    },
+    "dependencies": {
+      "axios": "^0.27.2",
+      "express": "^4.18.1"
+    }
+  }
+  

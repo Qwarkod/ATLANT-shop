@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.photo-logo {
+    margin-left: 10px;
+    width: 2%;
+}
+
+.header-text { 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: calc(25% - 2em);  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+@media (max-width: 1024px) {
+    .product {
+        width: calc(50% - 2em); 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(100% - 2em);  
+    }
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.price {
+    font-size: 1.2em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.new-price {
+    color: red;
+    font-size: 1.3em;
+}
+
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.social-icons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;  
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: red;  
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);  
+    transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+    filter: invert(100%);  
+}
+
+
+
+
+
+
+
+
+
+.product-link a {
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
+}
+
+.product-link a:hover {
+    text-decoration: none;
+
+}

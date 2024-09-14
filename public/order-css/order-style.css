@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    padding: 25px;
+}
+
+.number-text, .promo-text {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.number-input, .promo-input {
+    margin-bottom: 1.5rem;
+}
+
+.number-input__input, .promo-input__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+}
+
+.number-input__input::placeholder, .promo-input__input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.order-button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.order-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.order-button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .order-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
+    .number-input__input, .promo-input__input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .order-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
